@@ -1,0 +1,69 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    width: 1280px;
+    margin: 0 auto;
+    /* text-align: center; */
+}
+
+header {
+    height: 69px;
+    position: fixed;
+    background-color: black;
+    width: 99vw;
+    max-width: 1280px;
+    border-bottom: 1px solid seashell;
+    text-align: right;
+}
+
+#logo img{
+    margin: 10px;
+    height: 50px;
+    float: left;
+    position: relative;
+}
+
+#navbar {
+    margin: 20px 10px;
+}
+
+#navbar a {
+    color: seashell;
+    margin: 20px 10px;
+}
+
+/* Mission Div */
+/* Center the words over the image */
+#mission {
+    background: url("/images/img-mission-background.webp");
+    height: 700px;
+    width: 1200px;
+    margin: 0 auto;
+    /* text-align: center; */
+}
+
+
+
+.mission {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    top: 13em;
+    text-align: center;
+    max-width: 1200px;
+}
+
+.mission h2 { margin-bottom: 0; }
+
+.mission h4 { margin-bottom: 0.5em; }
