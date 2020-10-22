@@ -11,7 +11,7 @@ body {
     opacity: 0.9;
     width: 1280px;
     margin: 0 auto;
-    /* text-align: center; */
+    text-align: center;
 }
 
 header {
@@ -41,7 +41,6 @@ header {
 }
 
 /* Mission Div */
-/* Center the words over the image */
 #mission {
     background: url("/images/img-mission-background.webp");
     height: 700px;
@@ -49,8 +48,6 @@ header {
     margin: 0 auto;
     /* text-align: center; */
 }
-
-
 
 .mission {
     background: black;
@@ -65,5 +62,85 @@ header {
 }
 
 .mission h2 { margin-bottom: 0; }
-
 .mission h4 { margin-bottom: 0.5em; }
+
+
+/* Featured Tea */
+h2, h4 { text-align: center; }
+
+#featuredTeaImgs {
+    display: flex;
+    width: 1000px;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    margin: 0 auto;
+}
+
+#featuredTeaImgs h4 {
+    margin: 0 auto 10px auto;
+}
+.teaImgs img{
+    height: 200px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+.teaImgs {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+
+}
+
+
+
+
+
+/* Locations */
+#locations {
+    background: url("/images/img-locations-background.webp") no-repeat;
+    text-align: center;
+    height: 500px;
+    width: 1200px;
+    margin: auto auto;
+    
+}
+
+#locations h2 {
+    padding-top: 100px;
+    margin-bottom: 15px;
+}
+
+#locationsCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.locations {
+    width: 300px;
+    background: black;
+}
+
+
+
+/* Footer */
+footer {
+    position: relative;
+    bottom: 0;
+}
+#footer {
+    text-align: center;
+}
+
+#contact {
+    height: 200px;
+    margin: 0 auto;
+}
+
+footer h2{ margin: 10px; }
+
+.copyright {
+    text-align: left;
+    margin-left: 20px;
+}
