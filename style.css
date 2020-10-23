@@ -1,6 +1,11 @@
-html {
+html, body {
     margin: 0;
     padding: 0;
+}
+
+
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -14,6 +19,7 @@ body {
     text-align: center;
 }
 
+/* Navbar */
 header {
     height: 69px;
     position: fixed;
@@ -22,6 +28,7 @@ header {
     max-width: 1280px;
     border-bottom: 1px solid seashell;
     text-align: right;
+    z-index: 5;
 }
 
 #logo img{
@@ -29,6 +36,7 @@ header {
     height: 50px;
     float: left;
     position: relative;
+    opacity: 0.9;
 }
 
 #navbar {
@@ -38,6 +46,7 @@ header {
 #navbar a {
     color: seashell;
     margin: 20px 10px;
+    opacity: 0.9;
 }
 
 /* Mission Div */
@@ -46,7 +55,8 @@ header {
     height: 700px;
     width: 1200px;
     margin: 0 auto;
-    /* text-align: center; */
+    position: relative;
+    top: 69px;
 }
 
 .mission {
@@ -56,28 +66,44 @@ header {
     justify-content: center;
     align-content: center;
     position: relative;
-    top: 13em;
+    top: 13.8em;
     text-align: center;
     max-width: 1200px;
+    line-height: 1;
 }
 
-.mission h2 { margin-bottom: 0; }
-.mission h4 { margin-bottom: 0.5em; }
+.mission h2 { margin: 10px 0 0 0; }
+.mission h4 { margin: 1em 0 0.5em 0; }
 
 
 /* Featured Tea */
-h2, h4 { text-align: center; }
+#teaOfTheMonth {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 70px;
+    padding-top: 2.4em;
+    line-height: 1;
+}
+
+#teaOfTheMonth h4 {
+    padding-top: 0;
+    margin-top: 0;
+    margin-bottom: 1.1em;
+}
+
+h2, h4 { text-align: center; opacity: 0.9; }
 
 #featuredTeaImgs {
     display: flex;
     width: 1000px;
     flex-wrap: wrap;
-    /* justify-content: center; */
+    justify-content: center;
     margin: 0 auto;
 }
 
 #featuredTeaImgs h4 {
-    margin: 0 auto 10px auto;
+    margin: 1px auto 17px auto;
 }
 .teaImgs img{
     height: 200px;
@@ -89,10 +115,7 @@ h2, h4 { text-align: center; }
     text-align: center;
     margin: 0 auto;
     margin-bottom: 10px;
-
 }
-
-
 
 
 
@@ -103,23 +126,29 @@ h2, h4 { text-align: center; }
     height: 500px;
     width: 1200px;
     margin: auto auto;
-    
+    position: relative;
+    top: 22px;
 }
 
 #locations h2 {
-    padding-top: 100px;
+    padding-top: 2em;
     margin-bottom: 15px;
 }
+
+h3 { opacity: 0.9;} 
 
 #locationsCards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .locations {
     width: 300px;
     background: black;
+    line-height: 1.5;
+    margin: .8em;
 }
 
 
@@ -127,7 +156,8 @@ h2, h4 { text-align: center; }
 /* Footer */
 footer {
     position: relative;
-    bottom: 0;
+    top: 20px;
+    /* bottom: 0; */
 }
 #footer {
     text-align: center;
